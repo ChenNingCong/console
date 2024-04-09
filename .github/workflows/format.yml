@@ -1,0 +1,12 @@
+name: IntelliJ Format
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  formatting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: notdevcody/intellij-format-action@v1
